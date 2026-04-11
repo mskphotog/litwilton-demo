@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - LIT Wilton</title>
+    <meta name="description" content="Weekly events at LIT Wilton - Poker, Bingo, Drag Race, Brunch and more on Wilton Drive.">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gradient-bar"></div>
+    <nav id="navbar" class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand">LIT</a>
+            <div class="navbar-links">
+                <a href="index.html" class="">Home</a>
+                <a href="events.html" class="active">Events</a>
+                <a href="about.html" class="">About</a>
+                <a href="contact.html" class="">Contact</a>
+            </div>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="index.html" class="">Home</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="about.html" class="">About</a>
+            <a href="contact.html" class="">Contact</a>
+        </div>
+    </nav>
+    <div class="page-header">
+        <p class="page-header-label fade-up">Something Every Night</p>
+        <h1 class="page-header-title fade-up fade-up-delay-1">Events</h1>
+    </div>
+
+    <section class="section section-cyan">
+        <div class="container">
+            <div class="reveal text-center mb-10">
+                <h2 class="section-title">Weekly Lineup</h2>
+                <p class="section-subtitle">Every week at LIT. Specials and times may vary for holidays.</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="reveal cal-day"><div class="cal-day-name">Monday</div><div class="cal-event"><p class="cal-event-title">MMM Monday</p><p class="cal-event-desc">$5 wells, $4 drafts</p><p class="cal-event-time">4 PM &ndash; 1 AM</p></div><div class="cal-event"><p class="cal-event-title">Games on the TVs</p><p class="cal-event-desc">All sports, all screens</p></div></div>
+                <div class="reveal cal-day"><div class="cal-day-name">Tuesday</div><div class="cal-event"><p class="cal-event-title">Poker Night</p><p class="cal-event-desc">Free Texas Hold'em tournament</p><p class="cal-event-time">7 PM Sign-up</p></div><div class="cal-event"><p class="cal-event-title">Taco Tuesday Specials</p><p class="cal-event-desc">Drink deals all evening</p></div></div>
+                <div class="reveal cal-day"><div class="cal-day-name">Wednesday</div><div class="cal-event"><p class="cal-event-title">Wheels Up Wednesday</p><p class="cal-event-desc">Flight crew badge = special deals</p><p class="cal-event-time">4 PM &ndash; 1 AM</p></div></div>
+                <div class="reveal cal-day"><div class="cal-day-name">Thursday</div><div class="cal-event"><p class="cal-event-title">Drag Race Watch Party</p><p class="cal-event-desc">Big screens, themed drinks</p><p class="cal-event-time">8 PM (in season)</p></div><div class="cal-event"><p class="cal-event-title">Thirsty Thursday</p><p class="cal-event-desc">Drink specials all night</p></div></div>
+                <div class="reveal cal-day"><div class="cal-day-name">Friday</div><div class="cal-event"><p class="cal-event-title">Happy Hour</p><p class="cal-event-desc">Kick off the weekend early</p><p class="cal-event-time">4 PM &ndash; 7 PM</p></div><div class="cal-event"><p class="cal-event-title">Late Night at LIT</p><p class="cal-event-desc">DJs and dancing until 2 AM</p><p class="cal-event-time">10 PM &ndash; 2 AM</p></div></div>
+                <div class="reveal cal-day"><div class="cal-day-name">Saturday</div><div class="cal-event"><p class="cal-event-title">Day Drinking on the Drive</p><p class="cal-event-desc">Doors open at 1 PM</p><p class="cal-event-time">1 PM &ndash; 7 PM</p></div><div class="cal-event"><p class="cal-event-title">Saturday Night LIT</p><p class="cal-event-desc">The main event. DJs until close.</p><p class="cal-event-time">10 PM &ndash; 2 AM</p></div></div>
+                <div class="reveal cal-day"><div class="cal-day-name">Sunday</div><div class="cal-event"><p class="cal-event-title">Liquid Brunch</p><p class="cal-event-desc">Brunch cocktails, mimosas, Bloody Marys</p><p class="cal-event-time">11 AM &ndash; 3 PM</p></div><div class="cal-event"><p class="cal-event-title">Bingo!</p><p class="cal-event-desc">Prizes, laughs, and good times</p><p class="cal-event-time">4 PM</p></div><div class="cal-event"><p class="cal-event-title">Basketball on the Big Screens</p><p class="cal-event-desc">Every game, every screen</p></div></div>
+                <div class="reveal cal-day"><div class="cal-day-name cal-day-name-pink">Every Day</div><div class="cal-event"><p class="cal-event-title">All the Games</p><p class="cal-event-desc">NFL, NBA, MLB, NHL, College, Soccer</p></div><div class="cal-event"><p class="cal-event-title">Pet-Friendly Patio</p><p class="cal-event-desc">Your four-legged friend is always welcome</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-navy">
+        <div class="container">
+            <div class="reveal text-center mb-10">
+                <p class="section-label section-label-pink">Mark Your Calendar</p>
+                <h2 class="section-title" style="color:var(--white)">Upcoming Specials</h2>
+            </div>
+            <div class="container-md" style="padding:0">
+                <div class="upcoming-row reveal"><div class="upcoming-date"><p class="upcoming-date-month" style="color:var(--cyan)">APR</p><p class="upcoming-date-day">19</p><p class="upcoming-date-weekday">Saturday</p></div><div><h3 class="upcoming-title">Yappy Hour</h3><p class="upcoming-desc">Bring the pups! Dog-friendly patio happy hour with treats and drink specials. 3 PM &ndash; 7 PM</p></div></div>
+                <div class="upcoming-row reveal"><div class="upcoming-date"><p class="upcoming-date-month" style="color:var(--orange)">MAY</p><p class="upcoming-date-day">3</p><p class="upcoming-date-weekday">Saturday</p></div><div><h3 class="upcoming-title">Coronita Cinco de Mayo Weekend</h3><p class="upcoming-desc">The fiesta starts early. Corona and Coronita specials, Mexican-inspired cocktails, and a whole lot of fun.</p></div></div>
+                <div class="upcoming-row reveal"><div class="upcoming-date"><p class="upcoming-date-month" style="color:var(--pink)">JUN</p><p class="upcoming-date-day">14</p><p class="upcoming-date-weekday">Saturday</p></div><div><h3 class="upcoming-title">Wilton Manors Stonewall Pride</h3><p class="upcoming-desc">LIT is your home base for Pride weekend. Extended hours, special programming, and all the love.</p></div></div>
+                <div class="upcoming-row reveal"><div class="upcoming-date"><p class="upcoming-date-month" style="color:var(--yellow)">JUL</p><p class="upcoming-date-day">TBD</p><p class="upcoming-date-weekday">Week</p></div><div><h3 class="upcoming-title">Tropical Bear Week</h3><p class="upcoming-desc">A full week of special events, themed nights, and the warmest welcome on the Drive. Dates coming soon.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-cyan">
+        <div class="container text-center">
+            <div class="reveal cta-box">
+                <div class="cta-icon"><svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg></div>
+                <h3 class="cta-title">Never Miss a Thing</h3>
+                <p class="cta-desc">Install the LIT app on your phone to get notified about events, specials, and last-minute happenings.</p>
+                <button class="btn btn-navy" onclick="alert('On a live PWA, this would trigger the install prompt!')">Add LIT to Home Screen</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">LIT WILTON</div>
+                <p class="footer-desc">Your neighborhood bar on Wilton Drive. Cold drinks, warm vibes, and something going on every night of the week.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Location</h4>
+                <p class="footer-text">2440 Wilton Drive<br>Wilton Manors, FL 33305</p>
+                <a href="https://maps.google.com/?q=2440+Wilton+Drive+Wilton+Manors+FL+33305" target="_blank" rel="noopener" class="footer-link">Get Directions &rarr;</a>
+            </div>
+            <div>
+                <h4 class="footer-heading">Hours</h4>
+                <div class="footer-hours">
+                    <div class="footer-hours-row"><span>Mon &ndash; Thu</span><span class="footer-hours-value">4p &ndash; 1a</span></div>
+                    <div class="footer-hours-row"><span>Friday</span><span class="footer-hours-value">4p &ndash; 2a</span></div>
+                    <div class="footer-hours-row"><span>Saturday</span><span class="footer-hours-value">1p &ndash; 2a</span></div>
+                    <div class="footer-hours-row"><span>Sunday</span><span class="footer-hours-value">11a &ndash; 1a</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2026 LIT Wilton. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.738-.9 10.126-5.864 10.126-11.854z"/></svg></a>
+                <a href="mailto:litwilton@gmail.com" aria-label="Email"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
