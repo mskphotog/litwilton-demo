@@ -882,25 +882,40 @@ textarea.form-input { resize: none; }
 .mt-4 { margin-top: 1rem; }
 .mt-8 { margin-top: 2rem; }
 
-/* ---- Language Toggle ---- */
-.lang-toggle {
-    background: rgba(255,255,255,0.15);
+/* ---- Language Switch (EN | ES) ---- */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0;
     border: 1px solid rgba(255,255,255,0.3);
-    color: var(--white);
+    border-radius: 0.35rem;
+    overflow: hidden;
+}
+.lang-opt {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.4);
     font-family: 'DM Sans', sans-serif;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
-    padding: 0.3rem 0.6rem;
-    border-radius: 0.35rem;
+    padding: 0.3rem 0.5rem;
     cursor: pointer;
     transition: all 0.3s;
     line-height: 1;
 }
-.lang-toggle:hover {
-    background: rgba(255,255,255,0.25);
-    border-color: var(--yellow);
+.lang-opt:hover {
+    color: rgba(255,255,255,0.7);
+}
+.lang-opt.lang-active {
+    background: rgba(255,255,255,0.2);
     color: var(--yellow);
+}
+.lang-sep {
+    color: rgba(255,255,255,0.2);
+    font-size: 0.75rem;
+    line-height: 1;
+    pointer-events: none;
 }
 
 /* Desktop: toggle lives inside .navbar-links, hide the mobile one */
@@ -910,13 +925,12 @@ textarea.form-input { resize: none; }
     gap: 0.75rem;
 }
 
-/* On mobile, show the mobile wrapper (lang + hamburger) */
-/* On desktop, hide the mobile wrapper and show lang inside navbar-links */
 @media (min-width: 768px) {
     .navbar-right-mobile { display: none; }
-    .navbar-links .lang-toggle { display: inline-block; }
+    .navbar-links .lang-switch { display: flex; }
 }
 @media (max-width: 767px) {
-    .navbar-links .lang-toggle { display: none; }
+    .navbar-links .lang-switch { display: none; }
     .navbar-right-mobile { display: flex; }
 }
+
