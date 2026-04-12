@@ -48,32 +48,33 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach(el => observer.observe(el));
     }
 
-    /* ---- PWA Install Logic ---- */
     let deferredPrompt;
-    const pwaHeroBanner = document.getElementById('pwa-hero-banner');
-    const pwaHeroInstall = document.getElementById('pwa-hero-install');
+    const pwaBanner = document.getElementById('pwa-banner');
+    const pwaInstall = document.getElementById('pwa-install');
+    const pwaDismiss = document.getElementById('pwa-dismiss');
 
     window.addEventListener('beforeinstallprompt', (e) => {
         e.preventDefault();
         deferredPrompt = e;
-        if (pwaHeroBanner) pwaHeroBanner.classList.add('show');
+        if (pwaBanner) pwaBanner.classList.add('show');
     });
 
-    if (pwaHeroInstall) {
-        pwaHeroInstall.addEventListener('click', async () => {
+    if (pwaInstall) {
+        pwaInstall.addEventListener('click', async () => {
             if (deferredPrompt) {
                 deferredPrompt.prompt();
                 await deferredPrompt.userChoice;
                 deferredPrompt = null;
-                if (pwaHeroBanner) pwaHeroBanner.classList.remove('show');
+                if (pwaBanner) pwaBanner.classList.remove('show');
             }
         });
     }
 
-    window.addEventListener('appinstalled', () => {
-        if (pwaHeroBanner) pwaHeroBanner.classList.remove('show');
-        deferredPrompt = null;
-    });
+    if (pwaDismiss) {
+        pwaDismiss.addEventListener('click', () => {
+            if (pwaBanner) pwaBanner.classList.remove('show');
+        });
+    }
 
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.navbar-links a, .mobile-menu a').forEach(link => {
