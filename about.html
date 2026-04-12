@@ -20,33 +20,37 @@
         <div class="navbar-inner">
             <a href="index.html" class="navbar-brand">LIT</a>
             <div class="navbar-links">
-                <a href="index.html" class="">Home</a>
-                <a href="events.html" class="">Events</a>
-                <a href="about.html" class="active">About</a>
-                <a href="contact.html" class="">Contact</a>
+                <a href="index.html" class="" data-i18n="nav-home">Home</a>
+                <a href="events.html" class="" data-i18n="nav-events">Events</a>
+                <a href="about.html" class="active" data-i18n="nav-about">About</a>
+                <a href="contact.html" class="" data-i18n="nav-contact">Contact</a>
+                <button id="lang-toggle" class="lang-toggle" aria-label="Cambiar a espa&ntilde;ol">ES</button>
             </div>
-            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-            </button>
+            <div class="navbar-right-mobile">
+                <button id="lang-toggle-mobile" class="lang-toggle lang-toggle-mobile" aria-label="Cambiar a espa&ntilde;ol">ES</button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
         </div>
         <div id="mobile-menu" class="mobile-menu">
-            <a href="index.html" class="">Home</a>
-            <a href="events.html" class="">Events</a>
-            <a href="about.html" class="active">About</a>
-            <a href="contact.html" class="">Contact</a>
+            <a href="index.html" class="" data-i18n="nav-home">Home</a>
+            <a href="events.html" class="" data-i18n="nav-events">Events</a>
+            <a href="about.html" class="active" data-i18n="nav-about">About</a>
+            <a href="contact.html" class="" data-i18n="nav-contact">Contact</a>
         </div>
     </nav>
     <div class="page-header">
-        <p class="page-header-label fade-up">Who We Are</p>
-        <h1 class="page-header-title fade-up fade-up-delay-1">About LIT</h1>
+        <p class="page-header-label fade-up" data-i18n="about-header-label">Who We Are</p>
+        <h1 class="page-header-title fade-up fade-up-delay-1" data-i18n="about-header-title">About LIT</h1>
     </div>
 
     <section class="section section-cyan">
         <div class="container">
             <div class="reveal about-text">
-                <p>LIT isn't trying to be everything to everyone. It's a <span class="text-navy">neighborhood bar</span> in the truest sense. A place where you can walk in any night of the week and feel at home. Where the bartender knows your order, your dog is welcome on the patio, and there's always something happening without the pretense.</p>
-                <p>Sitting right in the heart of <span class="text-navy">Wilton Drive</span>, LIT is part of the daily rhythm of Wilton Manors. Whether it's poker on Tuesday, Drag Race on Thursday, bingo on Sunday, or just a cold drink after a long day, this is where the neighborhood comes together.</p>
-                <p>We're a <span class="text-pink">sports bar</span>, a <span class="text-navy">hangout</span>, a <span class="text-orange">weekend party</span>, and a <span class="text-pink">Sunday brunch spot</span>. We're whatever you need us to be, whenever you need it.</p>
+                <p data-i18n="about-p1">LIT isn't trying to be everything to everyone. It's a <span class="text-navy">neighborhood bar</span> in the truest sense. A place where you can walk in any night of the week and feel at home. Where the bartender knows your order, your dog is welcome on the patio, and there's always something happening without the pretense.</p>
+                <p data-i18n="about-p2">Sitting right in the heart of <span class="text-navy">Wilton Drive</span>, LIT is part of the daily rhythm of Wilton Manors. Whether it's poker on Tuesday, Drag Race on Thursday, bingo on Sunday, or just a cold drink after a long day, this is where the neighborhood comes together.</p>
+                <p data-i18n="about-p3">We're a <span class="text-pink">sports bar</span>, a <span class="text-navy">hangout</span>, a <span class="text-orange">weekend party</span>, and a <span class="text-pink">Sunday brunch spot</span>. We're whatever you need us to be, whenever you need it.</p>
             </div>
         </div>
     </section>
@@ -54,15 +58,15 @@
     <section class="section section-navy">
         <div class="container">
             <div class="reveal text-center mb-12">
-                <h2 class="section-title" style="color:var(--white)">What Makes LIT, LIT</h2>
+                <h2 class="section-title" style="color:var(--white)" data-i18n="about-what-title">What Makes LIT, LIT</h2>
             </div>
             <div class="grid grid-3">
-                <div class="reveal info-card"><div class="info-card-emoji">🍺</div><h3 class="info-card-title">Strong Drinks, Fair Prices</h3><p class="info-card-desc">No $22 craft cocktails here. Just honest pours and daily specials that won't drain your wallet.</p></div>
-                <div class="reveal info-card"><div class="info-card-emoji">📺</div><h3 class="info-card-title">Every Game, Every Screen</h3><p class="info-card-desc">NFL, NBA, MLB, NHL, college, soccer. If there's a game on, we've got it on the big screens.</p></div>
-                <div class="reveal info-card"><div class="info-card-emoji">🐾</div><h3 class="info-card-title">Dog-Friendly Patio</h3><p class="info-card-desc">Bring your best friend. Our patio is always open to well-behaved pups (and their humans).</p></div>
-                <div class="reveal info-card"><div class="info-card-emoji">🎰</div><h3 class="info-card-title">Games and More Games</h3><p class="info-card-desc">Poker, bingo, trivia. We believe a bar is better when there's something to play.</p></div>
-                <div class="reveal info-card"><div class="info-card-emoji">🎵</div><h3 class="info-card-title">Weekend Energy</h3><p class="info-card-desc">Friday and Saturday nights bring DJs, dancing, and the kind of energy that keeps you out past your bedtime.</p></div>
-                <div class="reveal info-card"><div class="info-card-emoji">🏳️‍🌈</div><h3 class="info-card-title">For Everyone</h3><p class="info-card-desc">All are welcome at LIT. Always have been, always will be. Come as you are.</p></div>
+                <div class="reveal info-card"><div class="info-card-emoji">&#x1f37a;</div><h3 class="info-card-title" data-i18n="about-drinks-title">Strong Drinks, Fair Prices</h3><p class="info-card-desc" data-i18n="about-drinks-desc">No $22 craft cocktails here. Just honest pours and daily specials that won't drain your wallet.</p></div>
+                <div class="reveal info-card"><div class="info-card-emoji">&#x1f4fa;</div><h3 class="info-card-title" data-i18n="about-screens-title">Every Game, Every Screen</h3><p class="info-card-desc" data-i18n="about-screens-desc">NFL, NBA, MLB, NHL, college, soccer. If there's a game on, we've got it on the big screens.</p></div>
+                <div class="reveal info-card"><div class="info-card-emoji">&#x1f43e;</div><h3 class="info-card-title" data-i18n="about-patio-title">Dog-Friendly Patio</h3><p class="info-card-desc" data-i18n="about-patio-desc">Bring your best friend. Our patio is always open to well-behaved pups (and their humans).</p></div>
+                <div class="reveal info-card"><div class="info-card-emoji">&#x1f3b0;</div><h3 class="info-card-title" data-i18n="about-games-title">Games and More Games</h3><p class="info-card-desc" data-i18n="about-games-desc">Poker, bingo, trivia. We believe a bar is better when there's something to play.</p></div>
+                <div class="reveal info-card"><div class="info-card-emoji">&#x1f3b5;</div><h3 class="info-card-title" data-i18n="about-energy-title">Weekend Energy</h3><p class="info-card-desc" data-i18n="about-energy-desc">Friday and Saturday nights bring DJs, dancing, and the kind of energy that keeps you out past your bedtime.</p></div>
+                <div class="reveal info-card"><div class="info-card-emoji">&#x1f3f3;&#xfe0f;&#x200d;&#x1f308;</div><h3 class="info-card-title" data-i18n="about-everyone-title">For Everyone</h3><p class="info-card-desc" data-i18n="about-everyone-desc">All are welcome at LIT. Always have been, always will be. Come as you are.</p></div>
             </div>
         </div>
     </section>
@@ -70,11 +74,11 @@
     <section class="section section-cyan">
         <div class="container-sm text-center">
             <div class="reveal">
-                <h2 class="section-title mb-4">Come Get LIT</h2>
-                <p style="color:rgba(26,26,46,0.6);font-size:1.125rem;margin-bottom:2rem">We're at 2440 Wilton Drive, right in the heart of it all.</p>
+                <h2 class="section-title mb-4" data-i18n="about-cta-title">Come Get LIT</h2>
+                <p style="color:rgba(26,26,46,0.6);font-size:1.125rem;margin-bottom:2rem" data-i18n="about-cta-desc">We're at 2440 Wilton Drive, right in the heart of it all.</p>
                 <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center">
-                    <a href="events.html" class="btn btn-navy">See What's On</a>
-                    <a href="contact.html" class="btn btn-outline-navy">Get in Touch</a>
+                    <a href="events.html" class="btn btn-navy" data-i18n="about-btn-events">See What's On</a>
+                    <a href="contact.html" class="btn btn-outline-navy" data-i18n="about-btn-contact">Get in Touch</a>
                 </div>
             </div>
         </div>
@@ -83,25 +87,25 @@
         <div class="footer-grid">
             <div>
                 <div class="footer-brand">LIT WILTON</div>
-                <p class="footer-desc">Your neighborhood bar on Wilton Drive. Cold drinks, warm vibes, and something going on every night of the week.</p>
+                <p class="footer-desc" data-i18n="footer-desc">Your neighborhood bar on Wilton Drive. Cold drinks, warm vibes, and something going on every night of the week.</p>
             </div>
             <div>
-                <h4 class="footer-heading">Location</h4>
+                <h4 class="footer-heading" data-i18n="footer-location-heading">Location</h4>
                 <p class="footer-text">2440 Wilton Drive<br>Wilton Manors, FL 33305</p>
-                <a href="https://maps.google.com/?q=2440+Wilton+Drive+Wilton+Manors+FL+33305" target="_blank" rel="noopener" class="footer-link">Get Directions &rarr;</a>
+                <a href="https://maps.google.com/?q=2440+Wilton+Drive+Wilton+Manors+FL+33305" target="_blank" rel="noopener" class="footer-link" data-i18n="footer-directions">Get Directions &rarr;</a>
             </div>
             <div>
-                <h4 class="footer-heading">Hours</h4>
+                <h4 class="footer-heading" data-i18n="footer-hours-heading">Hours</h4>
                 <div class="footer-hours">
-                    <div class="footer-hours-row"><span>Mon &ndash; Thu</span><span class="footer-hours-value">4p &ndash; 1a</span></div>
-                    <div class="footer-hours-row"><span>Friday</span><span class="footer-hours-value">4p &ndash; 2a</span></div>
-                    <div class="footer-hours-row"><span>Saturday</span><span class="footer-hours-value">1p &ndash; 2a</span></div>
-                    <div class="footer-hours-row"><span>Sunday</span><span class="footer-hours-value">11a &ndash; 1a</span></div>
+                    <div class="footer-hours-row"><span data-i18n="footer-hours-mon">Mon &ndash; Thu</span><span class="footer-hours-value">4p &ndash; 1a</span></div>
+                    <div class="footer-hours-row"><span data-i18n="footer-hours-fri">Friday</span><span class="footer-hours-value">4p &ndash; 2a</span></div>
+                    <div class="footer-hours-row"><span data-i18n="footer-hours-sat">Saturday</span><span class="footer-hours-value">1p &ndash; 2a</span></div>
+                    <div class="footer-hours-row"><span data-i18n="footer-hours-sun">Sunday</span><span class="footer-hours-value">11a &ndash; 1a</span></div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-copy">&copy; 2026 LIT Wilton. All rights reserved.</p>
+            <p class="footer-copy" data-i18n="footer-rights">&copy; 2026 LIT Wilton. All rights reserved.</p>
             <div class="footer-social">
                 <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
                 <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.738-.9 10.126-5.864 10.126-11.854z"/></svg></a>
@@ -109,6 +113,7 @@
             </div>
         </div>
     </footer>
+    <script src="lang.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -20,45 +20,49 @@
         <div class="navbar-inner">
             <a href="index.html" class="navbar-brand">LIT</a>
             <div class="navbar-links">
-                <a href="index.html" class="">Home</a>
-                <a href="events.html" class="">Events</a>
-                <a href="about.html" class="">About</a>
-                <a href="contact.html" class="active">Contact</a>
+                <a href="index.html" class="" data-i18n="nav-home">Home</a>
+                <a href="events.html" class="" data-i18n="nav-events">Events</a>
+                <a href="about.html" class="" data-i18n="nav-about">About</a>
+                <a href="contact.html" class="active" data-i18n="nav-contact">Contact</a>
+                <button id="lang-toggle" class="lang-toggle" aria-label="Cambiar a espa&ntilde;ol">ES</button>
             </div>
-            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-            </button>
+            <div class="navbar-right-mobile">
+                <button id="lang-toggle-mobile" class="lang-toggle lang-toggle-mobile" aria-label="Cambiar a espa&ntilde;ol">ES</button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
         </div>
         <div id="mobile-menu" class="mobile-menu">
-            <a href="index.html" class="">Home</a>
-            <a href="events.html" class="">Events</a>
-            <a href="about.html" class="">About</a>
-            <a href="contact.html" class="active">Contact</a>
+            <a href="index.html" class="" data-i18n="nav-home">Home</a>
+            <a href="events.html" class="" data-i18n="nav-events">Events</a>
+            <a href="about.html" class="" data-i18n="nav-about">About</a>
+            <a href="contact.html" class="active" data-i18n="nav-contact">Contact</a>
         </div>
     </nav>
     <div class="page-header">
-        <p class="page-header-label fade-up">Come See Us</p>
-        <h1 class="page-header-title fade-up fade-up-delay-1">Contact</h1>
+        <p class="page-header-label fade-up" data-i18n="contact-header-label">Come See Us</p>
+        <h1 class="page-header-title fade-up fade-up-delay-1" data-i18n="contact-header-title">Contact</h1>
     </div>
 
     <section class="section section-cyan">
         <div class="container">
             <div class="grid grid-2col">
                 <div class="reveal">
-                    <h2 class="section-title mb-6" style="font-size:2.25rem">Find Us</h2>
-                    <div class="contact-block"><div class="contact-row"><div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><div><p class="contact-label">Address</p><p class="contact-value">2440 Wilton Drive<br>Wilton Manors, FL 33305</p><a href="https://maps.google.com/?q=2440+Wilton+Drive+Wilton+Manors+FL+33305" target="_blank" rel="noopener" class="contact-link">Open in Google Maps &rarr;</a></div></div></div>
-                    <div class="contact-block"><div class="contact-row"><div class="contact-icon"><svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><div><p class="contact-label">Hours</p><div class="footer-hours" style="margin-top:0.5rem"><div class="footer-hours-row"><span style="width:6rem;color:rgba(26,26,46,0.6)">Mon &ndash; Thu</span><span style="color:var(--navy)">4 PM &ndash; 1 AM</span></div><div class="footer-hours-row"><span style="width:6rem;color:rgba(26,26,46,0.6)">Friday</span><span style="color:var(--navy)">4 PM &ndash; 2 AM</span></div><div class="footer-hours-row"><span style="width:6rem;color:rgba(26,26,46,0.6)">Saturday</span><span style="color:var(--navy)">1 PM &ndash; 2 AM</span></div><div class="footer-hours-row"><span style="width:6rem;color:rgba(26,26,46,0.6)">Sunday</span><span style="color:var(--navy)">11 AM &ndash; 1 AM</span></div></div></div></div></div>
-                    <div class="contact-block"><div class="contact-row"><div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><div><p class="contact-label">Email</p><a href="mailto:litwilton@gmail.com" class="contact-link-cyan">litwilton@gmail.com</a></div></div></div>
-                    <div class="contact-block"><div class="contact-row"><div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg></div><div><p class="contact-label">Follow Us</p><div class="social-links" style="margin-top:0.5rem"><a href="#" class="social-btn" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="#" class="social-btn" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.738-.9 10.126-5.864 10.126-11.854z"/></svg></a></div></div></div></div>
+                    <h2 class="section-title mb-6" style="font-size:2.25rem" data-i18n="contact-find-title">Find Us</h2>
+                    <div class="contact-block"><div class="contact-row"><div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><div><p class="contact-label" data-i18n="contact-address-label">Address</p><p class="contact-value">2440 Wilton Drive<br>Wilton Manors, FL 33305</p><a href="https://maps.google.com/?q=2440+Wilton+Drive+Wilton+Manors+FL+33305" target="_blank" rel="noopener" class="contact-link" data-i18n="contact-maps-link">Open in Google Maps &rarr;</a></div></div></div>
+                    <div class="contact-block"><div class="contact-row"><div class="contact-icon"><svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><div><p class="contact-label" data-i18n="contact-hours-label">Hours</p><div class="footer-hours" style="margin-top:0.5rem"><div class="footer-hours-row"><span style="width:6rem;color:rgba(26,26,46,0.6)" data-i18n="contact-hours-mon">Mon &ndash; Thu</span><span style="color:var(--navy)">4 PM &ndash; 1 AM</span></div><div class="footer-hours-row"><span style="width:6rem;color:rgba(26,26,46,0.6)" data-i18n="contact-hours-fri">Friday</span><span style="color:var(--navy)">4 PM &ndash; 2 AM</span></div><div class="footer-hours-row"><span style="width:6rem;color:rgba(26,26,46,0.6)" data-i18n="contact-hours-sat">Saturday</span><span style="color:var(--navy)">1 PM &ndash; 2 AM</span></div><div class="footer-hours-row"><span style="width:6rem;color:rgba(26,26,46,0.6)" data-i18n="contact-hours-sun">Sunday</span><span style="color:var(--navy)">11 AM &ndash; 1 AM</span></div></div></div></div></div>
+                    <div class="contact-block"><div class="contact-row"><div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><div><p class="contact-label" data-i18n="contact-email-label">Email</p><a href="mailto:litwilton@gmail.com" class="contact-link-cyan">litwilton@gmail.com</a></div></div></div>
+                    <div class="contact-block"><div class="contact-row"><div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg></div><div><p class="contact-label" data-i18n="contact-follow-label">Follow Us</p><div class="social-links" style="margin-top:0.5rem"><a href="#" class="social-btn" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="#" class="social-btn" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.738-.9 10.126-5.864 10.126-11.854z"/></svg></a></div></div></div></div>
                 </div>
                 <div class="reveal">
-                    <h2 class="section-title mb-6" style="font-size:2.25rem">Send a Message</h2>
-                    <p style="color:rgba(26,26,46,0.6);margin-bottom:2rem">Got a question, want to book a private event, or just want to say hey? Drop us a line.</p>
-                    <div class="form-group"><label for="name" class="form-label">Name</label><input type="text" id="name" class="form-input" placeholder="Your name"></div>
-                    <div class="form-group"><label for="email" class="form-label">Email</label><input type="email" id="email" class="form-input" placeholder="you@email.com"></div>
-                    <div class="form-group"><label for="subject" class="form-label">Subject</label><select id="subject" class="form-input"><option value="">Select a topic</option><option value="general">General Inquiry</option><option value="events">Private Events</option><option value="feedback">Feedback</option><option value="other">Other</option></select></div>
-                    <div class="form-group"><label for="message" class="form-label">Message</label><textarea id="message" rows="5" class="form-input" placeholder="What's on your mind?"></textarea></div>
-                    <button type="button" class="btn btn-navy btn-full" onclick="alert('In the live version, this will send through Netlify Forms or a Baserow integration.')">Send Message</button>
+                    <h2 class="section-title mb-6" style="font-size:2.25rem" data-i18n="contact-msg-title">Send a Message</h2>
+                    <p style="color:rgba(26,26,46,0.6);margin-bottom:2rem" data-i18n="contact-msg-desc">Got a question, want to book a private event, or just want to say hey? Drop us a line.</p>
+                    <div class="form-group"><label for="name" class="form-label" data-i18n="contact-name-label">Name</label><input type="text" id="name" class="form-input" placeholder="Your name" data-i18n="contact-name-placeholder"></div>
+                    <div class="form-group"><label for="email" class="form-label" data-i18n="contact-email-field-label">Email</label><input type="email" id="email" class="form-input" placeholder="you@email.com" data-i18n="contact-email-placeholder"></div>
+                    <div class="form-group"><label for="subject" class="form-label" data-i18n="contact-subject-label">Subject</label><select id="subject" class="form-input"><option value="" data-i18n="contact-subject-default">Select a topic</option><option value="general" data-i18n="contact-subject-general">General Inquiry</option><option value="events" data-i18n="contact-subject-events">Private Events</option><option value="feedback" data-i18n="contact-subject-feedback">Feedback</option><option value="other" data-i18n="contact-subject-other">Other</option></select></div>
+                    <div class="form-group"><label for="message" class="form-label" data-i18n="contact-message-label">Message</label><textarea id="message" rows="5" class="form-input" placeholder="What's on your mind?" data-i18n="contact-message-placeholder"></textarea></div>
+                    <button type="button" class="btn btn-navy btn-full" data-i18n="contact-send-btn" onclick="alert('In the live version, this will send through Netlify Forms or a Baserow integration.')">Send Message</button>
                 </div>
             </div>
         </div>
@@ -75,25 +79,25 @@
         <div class="footer-grid">
             <div>
                 <div class="footer-brand">LIT WILTON</div>
-                <p class="footer-desc">Your neighborhood bar on Wilton Drive. Cold drinks, warm vibes, and something going on every night of the week.</p>
+                <p class="footer-desc" data-i18n="footer-desc">Your neighborhood bar on Wilton Drive. Cold drinks, warm vibes, and something going on every night of the week.</p>
             </div>
             <div>
-                <h4 class="footer-heading">Location</h4>
+                <h4 class="footer-heading" data-i18n="footer-location-heading">Location</h4>
                 <p class="footer-text">2440 Wilton Drive<br>Wilton Manors, FL 33305</p>
-                <a href="https://maps.google.com/?q=2440+Wilton+Drive+Wilton+Manors+FL+33305" target="_blank" rel="noopener" class="footer-link">Get Directions &rarr;</a>
+                <a href="https://maps.google.com/?q=2440+Wilton+Drive+Wilton+Manors+FL+33305" target="_blank" rel="noopener" class="footer-link" data-i18n="footer-directions">Get Directions &rarr;</a>
             </div>
             <div>
-                <h4 class="footer-heading">Hours</h4>
+                <h4 class="footer-heading" data-i18n="footer-hours-heading">Hours</h4>
                 <div class="footer-hours">
-                    <div class="footer-hours-row"><span>Mon &ndash; Thu</span><span class="footer-hours-value">4p &ndash; 1a</span></div>
-                    <div class="footer-hours-row"><span>Friday</span><span class="footer-hours-value">4p &ndash; 2a</span></div>
-                    <div class="footer-hours-row"><span>Saturday</span><span class="footer-hours-value">1p &ndash; 2a</span></div>
-                    <div class="footer-hours-row"><span>Sunday</span><span class="footer-hours-value">11a &ndash; 1a</span></div>
+                    <div class="footer-hours-row"><span data-i18n="footer-hours-mon">Mon &ndash; Thu</span><span class="footer-hours-value">4p &ndash; 1a</span></div>
+                    <div class="footer-hours-row"><span data-i18n="footer-hours-fri">Friday</span><span class="footer-hours-value">4p &ndash; 2a</span></div>
+                    <div class="footer-hours-row"><span data-i18n="footer-hours-sat">Saturday</span><span class="footer-hours-value">1p &ndash; 2a</span></div>
+                    <div class="footer-hours-row"><span data-i18n="footer-hours-sun">Sunday</span><span class="footer-hours-value">11a &ndash; 1a</span></div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-copy">&copy; 2026 LIT Wilton. All rights reserved.</p>
+            <p class="footer-copy" data-i18n="footer-rights">&copy; 2026 LIT Wilton. All rights reserved.</p>
             <div class="footer-social">
                 <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
                 <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.738-.9 10.126-5.864 10.126-11.854z"/></svg></a>
@@ -101,6 +105,7 @@
             </div>
         </div>
     </footer>
+    <script src="lang.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
