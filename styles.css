@@ -657,7 +657,85 @@ textarea.form-input { resize: none; }
     .page-header-title { font-size: 4.5rem; }
 }
 
-/* ---- PWA Banner ---- */
+/* ---- PWA Hero Banner (compact, inside hero) ---- */
+.pwa-hero-banner {
+    display: none;
+    margin-top: 2rem;
+}
+.pwa-hero-banner.show {
+    display: block;
+}
+.pwa-hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(26, 26, 46, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    max-width: 22rem;
+    margin: 0 auto;
+}
+.pwa-hero-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    background: rgba(0, 220, 212, 0.15);
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.pwa-hero-icon svg {
+    color: var(--cyan);
+}
+.pwa-hero-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    text-align: center;
+}
+.pwa-hero-btn {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 0.02em;
+    width: 100%;
+}
+.pwa-hero-btn:hover {
+    background: var(--navy-light);
+    box-shadow: 0 0 20px rgba(0, 220, 212, 0.25);
+}
+
+@media (min-width: 640px) {
+    .pwa-hero-inner {
+        flex-direction: row;
+        text-align: left;
+        max-width: 28rem;
+        padding: 1rem 1.5rem;
+    }
+    .pwa-hero-text {
+        text-align: left;
+        flex: 1;
+    }
+    .pwa-hero-btn {
+        width: auto;
+        white-space: nowrap;
+    }
+}
+
+/* ---- PWA Banner (old bottom banner - kept for fallback) ---- */
 .pwa-banner {
     display: none;
     background: var(--navy);
