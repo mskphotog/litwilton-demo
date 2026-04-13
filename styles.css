@@ -89,11 +89,18 @@ button, input, select, textarea { font-family: inherit; }
     justify-content: space-between;
 }
 .navbar-brand {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.875rem;
-    letter-spacing: 0.1em;
-    color: var(--white);
-    text-shadow: 0 0 40px rgba(255,255,255,0.4), 0 0 80px rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+.navbar-logo {
+    height: 48px;
+    width: auto;
+    filter: invert(1);
+    transition: opacity 0.3s;
+}
+.navbar-brand:hover .navbar-logo {
+    opacity: 0.8;
 }
 .navbar-links {
     display: none;
@@ -933,4 +940,3 @@ textarea.form-input { resize: none; }
     .navbar-links .lang-switch { display: none; }
     .navbar-right-mobile { display: flex; }
 }
-
