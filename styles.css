@@ -97,6 +97,7 @@ button, input, select, textarea { font-family: inherit; }
     height: 48px;
     width: auto;
     filter: invert(1);
+    mix-blend-mode: screen;
     transition: opacity 0.3s;
 }
 .navbar-brand:hover .navbar-logo {
