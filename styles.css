@@ -94,7 +94,7 @@ button, input, select, textarea { font-family: inherit; }
     line-height: 0;
 }
 .navbar-logo {
-    height: 48px;
+    height: 144px;
     width: auto;
     filter: invert(1);
     mix-blend-mode: screen;
